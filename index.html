@@ -1,510 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-  </head>
-  <body>
-    <div class="container py-5">
-      <!-- <h1 class="text-center">Unit Converter</h1> -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
-        <div class="mx-auto" >
-          <h1 class="text-center" style="color: aliceblue;">Unit Converter</h1>
-      </div>
-      </nav>
-      <form class="row g-3 py-5">
-        <div class="col-md-4">
-          <label for="value" class="form-label">Value:</label>
-          <input type="number" class="form-control" id="value" name="value" required step="any">
+    <title>excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c52ea334fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi every! one <span>this is about my overall information.</span> from India</h1>
+            </div>
         </div>
-        <div class="col-md-4">
-          <label for="from" class="form-label">From:</label>
-          <select class="form-select" id="from" name="from" required>
-            <optgroup label="Length">
-              <option value="centimeters">Centimeters</option>
-              <option value="meters">Meters</option>
-              <option value="kilometers">Kilometers</option>
-              <option value="feet">Feet</option>
-              <option value="miles">Miles</option>
-            </optgroup>
-            <optgroup label="Temperature">
-              <option value="celsius">Celsius</option>
-              <option value="fahrenheit">Fahrenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </optgroup>
-            <optgroup label="Pressure">
-              <option value="pascals">Pascals</option>
-              <option value="kilopascals">Kilopascals</option>
-              <option value="psi">PSI</option>
-            </optgroup>
-            <optgroup label="Time">
-              <option value="seconds">Seconds</option>
-              <option value="minutes">Minutes</option>
-              <option value="hours">Hours</option>
-              <option value="days">Days</option>
-            </optgroup>
-            <optgroup label="Speed">
-              <option value="mph">Mile Per Hour</option>
-              <option value="ft/s">Foot Per Second</option>
-              <option value="m/s">Meter Per Second</option>
-              <option value="kph">Kilometer Per Hour</option>
-              <option value="kn">Knots</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="to" class="form-label">To:</label>
-          <select class="form-select" id="to" name="to" required>
-            <optgroup label="Length">
-              <option value="centimeters">Centimeters</option>
-              <option value="meters">Meters</option>
-              <option value="kilometers">Kilometers</option>
-              <option value="feet">Feet</option>
-              <option value="miles">Miles</option>
-            </optgroup>
-            <optgroup label="Temperature">
-              <option value="celsius">Celsius</option>
-              <option value="fahrenheit">Fahrenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </optgroup>
-            <optgroup label="Pressure">
-              <option value="pascals">Pascals</option>
-              <option value="kilopascals">Kilopascals</option>
-              <option value="psi">PSI</option>
-            </optgroup>
-            <optgroup label="Time">
-              <option value="seconds">Seconds</option>
-              <option value="minutes">Minutes</option>
-              <option value="hours">Hours</option>
-              <option value="days">Days</option>
-            </optgroup>
-            <optgroup label="Speed">
-              <option value="mph">Mile Per Hour</option>
-              <option value="ft/s">Foot Per Second</option>
-              <option value="m/s">Meter Per Second</option>
-              <option value="kph">Kilometer Per Hour</option>
-              <option value="kn">Knots</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-grid gap-2 d-md-block text-sm-center py-5" >
-          <button type="submit" class="btn btn-primary">Convert</button>
-        </div>
-        <div class="d-grid gap-2 d-md-block text-sm-center" >
-          <button type="button" class="btn btn-outline-secondary" id ="clearButton">Clear</button>
-        </div>
-      </form>
-      <div class="row py-1">
-        <div class="col-md-12">
-          <h3 class="text-center mb-3">Result:</h3>
-          <p class="text-center" id="result"></p>
-        </div>
-      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-------About-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pranathipic.jpeg.jpg" width="325" height="400">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                     <p>I'm pranathi.I'm a B.tech student at Sri Vasavi Engineering College Computer Science Department.<br/>
+                        I am very curious to learn new things and I'm enthusiastic developer with a keen interest in software developement.I got certified in Hackathon and Brainovision for developing a web app.
+                     </p>
+                     <div class="tab-titles">
+                     <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links"onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Intermediate in MPC</li>
+                            <li><span>2024</span><br>B.Tech in Computer Science</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>A web designer is responsible for creating the design and layout of a website or web pages. It can mean working on a brand new website or updating an already existing site.
+                        I developed a e-commerce website and web site for human diet.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>A UI UX designer is a professional who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help them effectively reach more customers. They also ensure that the end-to-end journey with their products or services meets desired outcomes.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Certifications------------->
+    <div id="Certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="hackoverflow.jpeg.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>HackOverFlow</h3>
+                        <p>I got certificate in HackOverFlow 2k22 which is conducted in our college.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="brainovision.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>BrainoVision</h3>
+                        <p>Developed a Web App on Humandiet</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="scudverve.jpeg.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>SCUD verve</h3>
+                        <p>Participated in SCUD VERVE 2022, a technical fest on behalf of CSE department by Sri Vasavi Engineering College, Tadepalligudem.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="AI.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>Artificial intelligent</h3>
+                        <p>participated in ai 30days class conducted by panticsolutions</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="codeclause.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>codeclause offer letter</h3>
+                        <p>I got a internship offer letter by codeclause</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="infosis reactjs.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>react js</h3>
+                        <p>I got a certificate on reactjs by infosis springboard</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="oasisofferletter.jpg"width="350" height="250">
+                    <div class="layer">
+                        <h3>oasisofferletter</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> desabattulapranathi@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9390251501</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/pranathi_03/?igshid=MGNiNDI5ZTU%3D"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/desabattula-pranathi"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/desabattulapranathi"><i class="fa-brands fa-facebook"></i></a>
+
+                    </div>
+                    <a href="resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i>Pranathi</p>
+        </div>
+    </div>
     <script>
-      const form = document.querySelector('form');
-      const result = document.querySelector('#result');
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const value = parseFloat(document.querySelector('#value').value);
-        const from = document.querySelector('#from').value;
-        const to = document.querySelector('#to').value;
-        let convertedValue;
-
-        switch (from) {
-          case 'centimeters':
-            switch (to) {
-              case 'centimeters':
-                convertedValue = value;
-                break;
-              case 'meters':
-                convertedValue = value / 100;
-                break;
-              case 'kilometers':
-                convertedValue = value / 100000;
-                break;
-              case 'feet':
-                convertedValue = value / 30.48;
-                break;
-              case 'miles':
-                convertedValue = value / 160900;
-                break;
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
             }
-            break;
-
-          case 'meters':
-            switch (to) {
-              case 'centimeters':
-                convertedValue = value  * 100;
-                break;
-              case 'meters':
-                convertedValue = value;
-                break;
-              case 'kilometers':
-                convertedValue = value / 1000;
-                break;
-              case 'feet':
-                convertedValue = value * 3.28084;
-                break;
-              case 'miles':
-                convertedValue = value / 1609.34;
-                break;
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
             }
-            break;
-
-          case 'kilometers':
-            switch (to) {
-              case 'centimeters':
-                convertedValue = value * 100000;
-                break;
-              case 'meters':
-                convertedValue = value * 1000;
-                break;
-              case 'kilometers':
-                convertedValue = value;
-                break;
-              case 'feet':
-                convertedValue = value * 3280.84;
-                break;
-              case 'miles':
-                convertedValue = value / 1.60934;
-                break;
-            }
-            break;
-
-          case 'feet':
-            switch (to) {
-              case 'centimeters':
-                convertedValue = value * 30.48;
-                break;
-              case 'meters':
-                convertedValue = value / 3.28084;
-                break;
-              case 'kilometers':
-                convertedValue = value / 3280.84;
-                break;
-              case 'feet':
-                convertedValue = value;
-                break;
-              case 'miles':
-                convertedValue = value / 5280;
-                break;
-            }
-            break;
-
-          case 'miles':
-            switch (to) {
-              case 'centimeters':
-                convertedValue = value * 160900;
-                break;
-              case 'meters':
-                convertedValue = value * 1609.34;
-                break;
-              case 'kilometers':
-                convertedValue = value * 1.60934;
-                break;
-              case 'feet':
-                convertedValue = value * 5280;
-                break;
-              case 'miles':
-                convertedValue = value;
-                break;
-            }
-            break;
-
-          case 'celsius':
-            switch (to) {
-              case 'celsius':
-                convertedValue = value;
-                break;
-              case 'fahrenheit':
-                convertedValue = (value * 1.8) + 32;
-                break;
-              case 'kelvin':
-                convertedValue = value + 273.15;
-                break;
-            }
-            break;
-
-          case 'fahrenheit':
-            switch (to) {
-              case 'celsius':
-                convertedValue = (value - 32) / 1.8;
-                break;
-              case 'fahrenheit':
-                convertedValue = value;
-                break;
-              case 'kelvin':
-                convertedValue = (value + 459.67) / 1.8;
-                break;
-            }
-            break;
-
-          case 'kelvin':
-            switch (to) {
-              case 'celsius':
-                convertedValue = value - 273.15;
-                break;
-              case 'fahrenheit':
-                convertedValue = (value * 1.8) - 459.67;
-            break;
-          case 'kelvin':
-            convertedValue = value;
-            break;
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        break;
-
-      case 'pascals':
-        switch (to) {
-          case 'pascals':
-            convertedValue = value;
-            break;
-          case 'kilopascals':
-            convertedValue = value / 1000;
-            break;
-          case 'psi':
-            convertedValue = value / 6895;
-            break;
-          case 'atmospheres':
-            convertedValue = value / 101325;
-            break;
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
         }
-        break;
-
-      case 'kilopascals':
-        switch (to) {
-          case 'pascals':
-            convertedValue = value * 1000;
-            break;
-          case 'kilopascals':
-            convertedValue = value;
-            break;
-          case 'psi':
-            convertedValue = value / 6.895;
-            break;
-          case 'atmospheres':
-            convertedValue = value / 101.325;
-            break;
+        function closemenu(){
+            sidemenu.style.right="-200px";
         }
-        break;
-
-      case 'psi':
-        switch (to) {
-          case 'pascals':
-            convertedValue = value * 6895;
-            break;
-          case 'kilopascals':
-            convertedValue = value * 6.895;
-            break;
-          case 'psi':
-            convertedValue = value;
-            break;
-          case 'atmospheres':
-            convertedValue = value / 14.696;
-            break;
-        }
-        break;
-
-      case 'atmospheres':
-        switch (to) {
-          case 'pascals':
-            convertedValue = value * 101325;
-            break;
-          case 'kilopascals':
-            convertedValue = value * 101.325;
-            break;
-          case 'psi':
-            convertedValue = value * 14.696;
-            break;
-          case 'atmospheres':
-            convertedValue = value;
-            break;
-        }
-        break;
-
-      case 'seconds':
-        switch (to) {
-          case 'seconds':
-            convertedValue = value;
-            break;
-          case 'minutes':
-            convertedValue = value / 60;
-            break;
-          case 'hours':
-            convertedValue = value / 3600;
-            break;
-          case 'days':
-            convertedValue = value / 86400;
-            break;
-        }
-        break;
-
-      case 'minutes':
-        switch (to) {
-          case 'seconds':
-            convertedValue = value * 60;
-            break;
-          case 'minutes':
-            convertedValue = value;
-            break;
-          case 'hours':
-            convertedValue = value / 60;
-            break;
-          case 'days':
-            convertedValue = value / 1440;
-            break;
-        }
-        break;
-
-      case 'hours':
-        switch (to) {
-          case 'seconds':
-            convertedValue = value * 3600;
-            break;
-          case 'minutes':
-            convertedValue = value * 60;
-            break;
-          case 'hours':
-            convertedValue = value;
-            break;
-          case 'days':
-            convertedValue = value / 24;
-            break;
-        }
-        break;
-
-      case 'days':
-        switch (to) {
-          case 'seconds':
-            convertedValue = value * 86400;
-            break;
-          case 'minutes':
-            convertedValue = value * 1440;
-            break;
-          case 'hours':
-            convertedValue = value * 24;
-            break;
-          case 'days':
-            convertedValue = value;
-            break;
-        }
-        break;
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtimMZY48jCtiFqzFPiwN5ku7BPAqIGDHMiuIvVgcc42RKbjewUDndlptxHZLS14dI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")       
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     
-      case 'mph':
-        switch (to) {
-          case 'mph':
-            convertedValue = value;
-            break;
-          case 'ft/s':
-            convertedValue = value * 1.46667;
-            break;
-          case 'm/s':
-            convertedValue = value / 2.23694;
-            break;
-          case 'kph':
-            convertedValue = value * 1.60934;
-            break;
-          case 'kn':
-            convertedValue = value / 1.15078;
-            break;
-        }
-        break;
-
-      case 'ft/s':
-        switch (to) {
-          case 'mph':
-            convertedValue = value / 1.46667;
-            break;
-          case 'ft/s':
-            convertedValue = value;
-            break;
-          case 'm/s':
-            convertedValue = value / 3.28084;
-            break;
-          case 'kph':
-            convertedValue = value * 1.09728;
-            break;
-          case 'kn':
-            convertedValue = value / 1.68781;
-            break;
-        }
-        break;
-
-      case 'm/s':
-        switch (to) {
-          case 'mph':
-            convertedValue = value * 2.23694;
-            break;
-          case 'ft/s':
-            convertedValue = value * 3.28084;
-            break;
-          case 'm/s':
-            convertedValue = value;
-            break;
-          case 'kph':
-            convertedValue = value * 3.6;
-            break;
-          case 'kn':
-            convertedValue = value * 1.94384;
-            break;
-        }
-        break;
-
-      case 'kph':
-        switch (to) {
-          case 'mph':
-            convertedValue = value / 1.60934;
-            break;
-          case 'ft/s':
-            convertedValue = value / 1.09728;
-            break;
-          case 'm/s':
-            convertedValue = value / 3.6;
-            break;
-          case 'kph':
-            convertedValue = value;
-            break;
-          case 'kn':
-            convertedValue = value / 1.852;
-            break;
-        }
-        break;
-
-      case 'kn':
-        switch (to) {
-          case 'mph':
-            convertedValue = value * 1.15078;
-            break;
-          case 'ft/s':
-            convertedValue = value * 1.68781;
-            break;
-          case 'm/s':
-            convertedValue = value / 1.94384;
-            break;
-          case 'kph':
-            convertedValue = value * 1.852;
-            break;
-          case 'kn':
-            convertedValue = value;
-            break;
-        }
-        break;
-    }
-    result.textContent = `${value} ${from} = ${convertedValue} ${to}`;
-  });
-
-const clearButton = document.querySelector("#clearButton");
-const value = document.querySelector("#value");
-const resultField = document.querySelector("#result");
-
-clearButton.addEventListener("click", function() {
-  value.value = "";
-  resultField.innerHTML = "";
-});
-</script>
 </body>
 </html>
